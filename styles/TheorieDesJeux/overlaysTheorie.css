@@ -1,0 +1,64 @@
+#paragraph-overlay {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+  }
+  #win-overlay {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+  }
+  
+  .overlay-paragraph {
+    font-size: 1.5rem;
+    text-align: center;
+    color:black;
+  }
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1;
+  }
+ 
+  
+  #allez{
+    text-decoration: none;
+    color: white;
+    background-color:   #0894a0e6 ; 
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+ 
+  }
+  #allez:hover{
+    
+    background-color:#048a96e6   ;
+  }
+  
+
+
+
+@media (min-width:48rem){
+    .modal{
+        left:calc(50%-20rem);
+        width:40rem;
+    }
+}

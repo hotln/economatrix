@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/TheorieDesJeux/bertrand.css" rel="stylesheet">
+    <script src="javascript/theorieDesJeux/bertrand.js" defer></script>
+    <title>Duopole de Bertrand</title>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <header>
+        <a href="index.html">EconoMatrix</a>
+        
+    </header>
+    <main>
+        <section id="hero">
+        
+          <h1>Le Duopole de Bertrand</h1>
+        
+         
+
+        </section>
+        <div id="overlay-begin" >
+            <img src="images/pepperoni.png" alt="pizza Image">
+            <p>
+                Bienvenue dans la ville de PizzaTown, où deux pizzerias rivales se battent pour dominer le marché local. Vous incarnez l’un des deux gérants : Pepperoni Palace ou Cheesy Kingdom. Les habitants de PizzaTown adorent les pizzas, mais ils sont très sensibles aux prix. Votre objectif : fixer le prix parfait pour attirer le maximum de clients et maximiser vos profits !
+
+            </p>
+            <button id="close-overlay">Suivant</button>
+        </div>
+        <section id="jeux">
+          <p>Demande totale = 100 - 5 x prix</p>
+          <p>Coût marginal = 5 euros</p>
+          
+          <h2>Cheesy Kingdom</h2>
+          <section id="ai-gameboard" class="gameboard">
+            <p>Prix de concurrent:</p>
+            <button class="ai-choice-btn" id="5ai">5</button>
+            <button class="ai-choice-btn" id="7ai">7</button>
+            <button class="ai-choice-btn" id="10ai">10</button>
+            <button class="ai-choice-btn" id="12ai">12</button>
+            <button class="ai-choice-btn" id="15ai">15</button>
+          </section>
+          <div id="avatar">
+          <p id="contenu">Votre concurrent est en train de fixer son prix... Réfléchissez à une stratégie compétitive. N’oubliez pas : un prix trop bas réduit vos marges, et un prix trop haut peut vous coûter toute la demande.</p>
+          
+          <div id="indice-overlay" >
+          <button id="close">X</button>
+    <div class="formula">
+        
+        Πᵢ = Pᵢ ⋅ D(Pᵢ) − Cₘ ⋅ D(Pᵢ)
+    </div>
+
+
+    <h4>Si P₍CK₎ &lt; P₍PP₎ (Cheesy Kingdom fixe un prix plus bas) :</h4>
+    <div class="case-formula">
+        D₍CK₎ = 100 − 5 ⋅ P₍CK₎ et D₍PP₎ = 0
+    </div>
+
+    <h4>Si P₍CK₎ &gt; P₍PP₎ (Pepperoni Placez fixe un prix plus bas) :</h4>
+    <div class="case-formula">
+        D₍PP₎ = 100 − 5 ⋅ P₍PP₎ et D₍CK₎ = 0
+    </div>
+
+    <h4>Si P₍CK₎ = P₍PP₎ (les prix sont égaux) :</h4>
+    <div class="case-formula">
+        D₍CK₎ = D₍PP₎ = (100 − 5 ⋅ P₍CK₎) / 2
+    </div>
+    <button id="plus">En savoir plus</button>
+          </div>
+          <img  src="images/pizza.png" id="pizza"></div>
+          <section id="player-gameboard" class="gameboard">
+            <p>Vos prix:</p>
+            <button class="player-choice-btn" id="5">5</button>
+            <button class="player-choice-btn" id="7">7</button>
+            <button class="player-choice-btn" id="10">10</button>
+            <button class="player-choice-btn" id="12">12</button>
+            <button class="player-choice-btn" id="15">15</button>
+          </section>
+          <h2>Pepperoni Palace</h2>
+        </section>
+        <div id="egalite-overlay" class="overlay">
+            <p>En agissant comme un cartel et en fixant le même prix que votre concurrent, vous avez établi le prix du marché. 
+                Pouvez-vous calculer la part de bénéfice qui vous revient ?</p>
+            <form id="egalite-form">
+                <label for="egalite-input">Entrez un chiffre :</label>
+                <input type="number" id="egalite-input" />
+                <button type="submit">Submit</button>
+                
+            </form>
+            <p id="egalite-feedback"></p>
+            <div id="buttons4">
+                <button id="tryagain4-btn">rejouer</button>
+                <button id="othertheories4-btn">aller aux autres theories</button></div>
+        </div>
+        <div id="win-overlay" class="overlay">
+            <p>Vous étiez plus compétitif que votre concurrent et avez gagné tous les clients. 
+                Pouvez-vous maintenant calculer votre bénéfice ?</p>
+            <form id="win-form">
+                <label for="win-input">Entrez un chiffre :</label>
+                <input type="number" id="win-input" />
+                <button type="submit">Submit</button>
+                
+            </form>
+            <p id="win-feedback"></p>
+            <div id="buttons3">
+                <button id="tryagain3-btn">rejouer</button>
+                <button id="othertheories3-btn">aller aux autres theories</button></div>
+        </div>
+        
+        <div id="lose-overlay" class="overlay">
+            <p>Malheureusement, vous avez perdu la concurrence sur les prix. 
+                Tous les clients sont partis chez Cheesy Palace. Vous avez subi une perte.</p>
+                <button id="tryagain-btn">rejouer</button>
+                <button id="othertheories-btn">aller aux autres theories</button>
+        </div>
+        <div id="cout-overlay" class="overlay">
+            <p>Tous les clients sont venus à vous, mais comme vous avez vendu au prix coûtant, vous n'avez réalisé aucun profit. 
+                Vous n'avez pas fait faillite, mais vous n'avez pas non plus eu de bénéfices.</p>
+                <button id="tryagain2-btn">rejouer</button>
+                <button id="othertheories2-btn">aller aux autres theories</button>
+        </div>
+
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

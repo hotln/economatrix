@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theorie Des Jeux</title>
+   
+    <link rel="stylesheet" href="styles/TheorieDesJeux/stylesTheorie.css" />
+    <link rel="stylesheet" href="styles/TheorieDesJeux/overlaysTheorie.css">
+    <link rel="stylesheet" href="styles/TheorieDesJeux/configurationTheorie.css">
+    <link rel="stylesheet" href="styles/TheorieDesJeux/gameTheorie.css">
+   
+    <script src="javascript/theorieDesJeux/appTheorie.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header>
+        <a href="index.html"><h2>EconoMatrix</h2></a>
+        
+      <h1>Duopole de Cournot</h1>
+      <button class="btn btn-alt">scenario</button>
+      <aside class="modal" id="paragraph-overlay">
+        <p class=overlay-paragraph>Deux entreprises, Entreprise A et Entreprise B, produisent un bien homogène et se font concurrence sur le marché en fixant leurs quantités de production simultanément. Le prix du bien sur le marché est déterminé par la demande agrégée en fonction de la quantité totale produite par les deux entreprises.
+          Chaque entreprise doit décider de la quantité à produire pour maximiser son profit, en anticipant la quantité que l'autre entreprise va produire. Il s'agit d'un jeu non coopératif simultané parce que les entreprises prennent leurs décisions sans connaître le choix de l'autre.
+          </p>
+      </aside>
+      
+    </header>
+    <main>
+      <div id="info-question">
+      <p>prix=2-0.002 x Quantité totale</p>
+      <p>Cout = 0.3 x quantité</p></div>
+        <section id="active-game">
+           <h2>L'autre entreprise</h2>
+           <section id="coop-cheat">
+            <section id="concurrence">
+            <p>q concurrence</p>
+           <p>287</p></section>
+           <section id="cartel">
+           <p>q cartel</p>
+           <p>213</p> </section></section>
+           
+            <div class="dropdown-container">
+                <div class="dropdown">
+                 
+                  <p>287</p>
+                    <button class="btn dropdown-btn">▼</button>
+                   
+
+                    <div class="dropdown-content">
+                        <button class="correct">158,158</button>
+                          <button class="dropdown-item">201,149</button>
+                            <button class="dropdown-item">181,181</button>
+                              <button class="dropdown-item">149,201</button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                 
+                    <button class="btn dropdown-btn">▼</button>
+                    <div class="dropdown-content">
+                      <button class="dropdown-item">158,158</button>
+                      <button class="correct">201,149</button>
+                        <button class="dropdown-item">181,181</button>
+                          <button class="dropdown-item">149,201</button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                  
+                  <p>213</p>
+                    <button class="btn dropdown-btn">▼</button>
+                    <div class="dropdown-content">
+                      <button class="dropdown-item">158,158</button>
+                      <button class="dropdown-item">201,149</button>
+                        <button class="dropdown-item">181,181</button>
+                          <button class="correct">149,201</button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-btn">▼</button>
+                    <div class="dropdown-content">
+                      <button class="dropdown-item">158,158</button>
+                      <button class="dropdown-item">201,149</button>
+                        <button class="correct">181,181</button>
+                          <button class="dropdown-item">149,201</button>
+                    </div>
+                </div>
+            </div>
+            <div id="avatar">
+              <button class="btn" id="coop-btn">monopole</button>
+              <button class="btn" id="cheat-btn">duopole</button>
+              <div id="win-overlay" class="overlay" style="display:none;">
+                <p>Selon l'équilibre de Nash, vous avez fait le bon choix, félicitations !!</p>
+                <a href="TheoriesDeJeux.html" id="allez">allez aux autres jeux</a>
+              </div>
+              <div id="lose-overlay" class="overlay" style="display:none;">
+                <p>Malheuresemnt ce n'est pas la bonne choix</p>
+                  
+              </div>
+              <img src="images/man.png" id="avatar-image">
+              <!-- Başlangıçta gizli olacak sabit paragraf -->
+              <div id="avatar-text" style="display:none;">
+               <p>profit(i)=quantité x (prix - coût) </p> 
+               <p>pour maximiser le profit: revenu marginal = coût marginal</p>
+               <a href="cournotInfo.html">pour plus d’informations</a>
+            </div>
+          </div>
+      
+
+          
+          
+
+        </div>
+
+          </div>
+          
+        </section>
+    </main>
+</body>
+</html>

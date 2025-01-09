@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 226, 226);
+}
+header {
+    padding: 2rem 5%;
+    font-size: 2rem;
+}
+#avatar {
+    display: flex;
+}
+#avatar img {
+    height: 12rem;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+header a:hover {
+    background-color: #06808be6;
+    border-radius: 1rem;
+}
+#savoir {
+    margin-left: 60%;
+}
+#hero {
+    background-color: #06808be6;
+    color: rgb(240, 226, 226);
+    padding-top: 1%;
+    margin-top: -7%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#hero h1 {
+    font-size: 4rem;
+}
+button{
+   background-color: #06808be6;
+   color: white;
+   border-color: transparent;
+}
+button:hover{
+background-color: #056f78e6;
+box-shadow: 0 2px 8px white;
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+.overlay {
+    display: none;
+    position: absolute;
+    top: calc(100% - 15rem);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 30rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    z-index: 100;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+#indice-overlay h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+#indice-overlay{
+    display: none;
+    position: absolute;
+    top: calc(100% - 30rem);
+    left: 75%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 30rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    z-index: 100;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+#close{
+    margin-left: 80%;
+}
+.formule h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.formula {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.case-formula {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+#scenario-overlay {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 90%;
+    max-width: 30rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    z-index: 100;
+    color: black;
+}
+#jeux p {
+    font-size: 2rem;
+    text-align: center;
+}
+#contenu {
+    width: 70%;
+    margin-left: 10%;
+}
+.gameboard button {
+    padding: 3rem;
+    margin-top: 2%;
+    background-color: rgb(208, 168, 168);
+    color:black;
+}
+#player-gameboard button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(99, 81, 81, 0.26);
+}
+#player-gameboard {
+    margin-bottom: -5%;
+    margin-left: 23%;
+}
+.gameboard {
+    margin-left: 15%;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.gameboard p {
+    margin-left: 2%;
+}
+#jeux h2 {
+    margin-left: 45%;
+    margin-bottom: -2%;
+}
+footer {
+    height: 3rem;
+}
+
+
+form {
+    margin-top: 1rem;
+    text-align: center;
+}
+form label {
+    margin-right: 0.5rem;
+}
+form input {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+#egalite-feedback, #win-feedback {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+#tryagain4-btn {
+    display: none;
+}
+#tryagain3-btn {
+    display: none;
+}
+#othertheories4-btn {
+    display: none;
+}
+#othertheories3-btn {
+    display: none;
+}
+#overlay-begin {
+    position: absolute;
+  width: 70%; /* Her bir resim divi genişlik */
+  overflow: hidden; /* Resim taşarsa gizle */
+  height: 45rem;
+    z-index: 200;
+    left:15%;
+    top: 10%;
+}
+
+#overlay-begin img {
+  width: 100%;
+  height: 38rem;
+/*  object-fit: cover; /* Resmi kesmeden uygun şekilde boyutlandır */
+  opacity: 0.85;
+  background-color: white;
+  z-index: 100;
+}
+
+#overlay-begin p {
+  position: absolute;
+  top: 30%; /* Yukarıdan boşluk */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: rgb(255, 255, 255,0.5);
+  text-shadow: 3px 3px 7px white;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 200;
+  width: 90%;
+}
+
+#overlay-begin button {
+  position:absolute;
+top:60%;
+  left: 44%;
+ /* transform: translate(-50%, 0);*/
+  padding-bottom:10px;
+  padding-top:10px;
+  font-size: 1rem;
+  background-color: #06808be6;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 200;
+  width:8rem;
+  height: 3rem;
+}
+
+#overlay-begin button:hover {
+    background-color: #05697a;
+}
+.btns{
+    display: flex;
+    gap:3rem;
+}

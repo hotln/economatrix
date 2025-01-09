@@ -1,0 +1,289 @@
+body{
+    margin:0;
+    font-family: "Amatic SC", system-ui;
+    color: rgb(42, 38, 38);
+    background-color: rgb(240, 226, 226);
+    height: 45rem;
+}
+header{
+    background-color:  #06808be6 ;
+    color: white;
+    padding:5rem 2% 1rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+header p{
+    margin-top: -1rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color: #06808be6 !important;
+
+    border: 1px solid  #06808be6 ;
+    color: white;
+    border-radius: 4px;
+    cursor:pointer
+}
+.btn-alt{
+    background-color: #06808be6 !important;
+    border-color: black;
+    color: white;
+
+}
+.btn:hover{
+    background-color: #06808be6 !important;
+
+    border-color: #077b86e6 !important;
+}
+.btn-alt:hover{
+    background-color:rgb(200, 169, 228);
+}
+
+header h1{
+    margin-top: -3rem;
+}
+main h2{
+    
+    font-size: 2rem;
+}
+main{text-align: center; }
+main a{
+    font-size: 2rem;
+    
+}
+main li{
+    margin-top: 2rem;
+}
+h3{
+    font-size: 2rem;
+    margin:1rem 2rem;
+}
+.btn-choix1{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+}
+.btn-choix2{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+}
+.btn-choix11{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix111{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix112{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix1112{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix1122{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix12{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix21{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+.btn-choix22{
+    padding:1rem 1rem 1rem 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-top:2rem;
+    display: none;
+    width: 30rem;
+    
+}
+#deuxQuestionInvest{
+    display: flex;
+    margin-left:8%;
+    
+}
+#premQuestionInvest{
+    display: flex;
+    margin-left: 8rem;
+    
+}
+#scenarios{
+    width: 50rem;
+    margin-left: 24%;
+    margin-top:3rem;
+}
+#scenarios button{
+    padding: 2rem 1rem 2rem 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#premQuestionInvest button{
+    display: flex;
+    width:30rem;
+    
+    
+}
+
+#finInvest{
+    display: flex;
+    margin-left:8%;
+    
+}
+#alternativeInvest{
+    display: flex;
+    margin-left:8%;
+}
+footer{
+    height: 3rem;
+}
+#finNette button{
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #06808be6 !important;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+#tryAgain button{
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #06808be6 !important;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+#availableCrises{
+    margin-right: 33%;
+    
+}
+  
+
+#info{
+    font-size: 1.5rem;
+    font-family: "Ubuntu", serif;
+    width:80%;
+margin-left:10%;}
+.avatars{
+    display: flex;
+    gap:20%;
+    margin-left: 20%;
+}
+.avatars a{
+    background-color: #06808be6 !important;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    border-radius: 0.5rem;
+}
+.avatarsinfos{
+    display: none;
+}
+#invest:hover{
+  display:block;
+}
+
+#investinfo {
+    display: none; /* Varsayılan olarak gizle */
+  }
+  
+  #invest:hover + #investinfo {
+    display: block; /* Hover olduğunda görünür yap */
+  }
+  #avatar-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    text-align: center;
+    display: none; /* Varsayılan olarak gizli */
+    z-index: 10;
+  }
+  .avatars img{
+    width: 7rem;
+    height: 7rem;
+    margin-top: 5%;
+  }
+  .avatars li a, img {
+    display: block;
+    margin-bottom: 1rem; /* Aralarına boşluk eklemek için */
+  }
+  .avatars img{
+    margin-left: 30%;
+  }
+  #av1{
+    gap:10%;
+    margin-left: 10%;
+  }
+  #av2{
+    gap:20%;
+    margin-left: 20%;
+  }
+  

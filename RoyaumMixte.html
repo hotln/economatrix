@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bataille des Royaums</title>
+    <link rel="stylesheet" href="styles/Prison/stylesPrison.css" />
+    <link rel="stylesheet" href="styles/Prison/overlaysPrison.css">
+    <link rel="stylesheet" href="styles/Prison/configurationPrison.css">
+    <link rel="stylesheet" href="styles/Prison/gamePrison.css">
+    <script src="javascript/prison/configPrison.js" defer></script>
+    <script src="javascript/prison/appPrison.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header>
+      <a href="index.html">EconoMatrix</a>
+      
+        <h1>Bataille des Royaums</h1>
+      
+        
+    </header>
+    <main>
+      <aside class="modal" id="config-overlay">
+        <h2>Bataille des Royaums</h2>
+
+        
+      </aside>
+      
+      <section id="game-configuration">
+        <a href="TheoriesDeJeux.html"><button class="btn" id="retour">retour aux theories de jeux</button></a>
+        <ol>
+          <li>
+            <article id="player-1-data">
+              <h2>vous</h2>
+              <h3>Solaris</h3>
+              <p class="player-symbol">0</p>
+             
+            </article>
+          </li>
+          <li>
+            <article id="player-2-data">
+              <h2>IA</h2>
+              <h3>Lunaris</h3>
+              
+              <p class="player-symbol">0</p>
+            </article>
+          </li>
+        </ol>
+        
+      </section>
+        <section id="active-game">
+           <h2>Lunaris</h2>
+           <ul>
+            <li>attaquer</li>
+            <li>défendre</li>
+           </ul>
+           <section id="coop-cheat">
+            <div id="buttons-container">
+                <button class="btn" id="coop-btn">attaquer</button>
+                <button class="btn" id="cheat-btn">défendre</button>
+            </div>
+            <ol id="game-board">
+                <li>(-2,-2)</li>
+                <li>(3,-1)</li>
+                <li>(-1,3)</li>
+                <li>(0,0)</li>
+            </ol>
+        </section>
+        
+            <div id="avatar">
+             
+              <img src="images/avatar Duel des stratéges.png" id="avatar-image">
+              <div id="avatar-text" style="display:none;">
+
+               </div>
+          </div>
+          
+          </div>
+          <div id="game-over-overlay" class="modal">
+            <img id="result-image" alt="Result">
+            <h2 id="game-over-message"></h2>
+            <button id="restart-btn" class="btn">try again</button>
+        </div>
+        
+        
+        </section>
+    </main>
+</body>
+<footer>
+  <a href="RoyaumPure.html">Aller à la strategie pure</a>
+</footer>
+</html>

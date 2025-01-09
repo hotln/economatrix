@@ -1,0 +1,110 @@
+header{
+    
+  background: none;
+      background-color: #058995e6 !important;
+      
+  padding-top: 1rem;
+  padding-bottom:1rem;
+  margin-top: -1.5rem;}
+ 
+section{
+  border:1px solid rgb(0, 0, 0) ;
+  border-radius: 2rem;
+  display:flex;
+  gap:40%;
+  margin-left: 1rem;
+  margin-right:1rem;
+  padding-top: 1rem;
+  padding-bottom:1rem;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+body{
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+  background-color: #06808be6 !important;
+  z-index: 1;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+#right{
+  display: flex;
+  gap: 3rem;
+}
+#left{
+  display: flex;
+  gap: 3rem;
+}
+main {
+  display: flex;
+  justify-content: center; /* Merkezleme */
+}
+
+#quatrecrise, #jeux-container {
+  position: relative;
+  width: 38%; /* Her bir resim divi genişlik */
+  overflow: hidden; /* Resim taşarsa gizle */
+  height: 40rem;
+
+}
+
+#quatrecrise img, #jeux-container img {
+  width: 100%;
+  height: 38rem;
+/*  object-fit: cover; /* Resmi kesmeden uygun şekilde boyutlandır */
+  opacity: 0.85;
+  background-color: white;
+  z-index: 2rem;
+}
+#quatrecrise img{
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+
+}
+#jeux-container img {
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+#quatrecrise h1, #jeux-container h1 {
+  position: absolute;
+  top: 20%; /* Yukarıdan boşluk */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  
+  text-shadow: 3px 3px 7px white;
+  font-size: 3.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#quatrecrise button, #jeux-container button {
+  position: absolute;
+  bottom: 35%; /* Alttan boşluk */
+  left: 40%;
+ /* transform: translate(-50%, 0);*/
+  padding-bottom:10px;
+  padding-top:10px;
+  font-size: 1rem;
+  background-color: #06808be6;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  width:8rem;
+  height: 3rem;
+
+}
+
+#quatrecrise button:hover, #jeux-container button:hover {
+  background-color: #0056b3;
+}

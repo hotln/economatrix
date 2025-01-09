@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bataille des Royaums</title>
+    
+    <link rel="stylesheet" href="styles/Prison/stylesPrison.css" />
+    <link rel="stylesheet" href="styles/Prison/overlaysPrison.css">
+    <link rel="stylesheet" href="styles/Prison/configurationPrison.css">
+    <link rel="stylesheet" href="styles/Prison/gamePrison.css">
+    <script src="javascript/prison/configPrison.js" defer></script>
+    <script src="javascript/prison/appPrison2.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header>
+      <a href="index.html">EconoMatrix</a>
+      
+        <h1>Bataille des Royaums</h1>
+      
+        
+    </header>
+    <main>
+      
+      <section id="game-configuration">
+        <a href="TheoriesDeJeux.html"><button class="btn" id="retour">retour aux theories de jeux</button></a>
+        <ol>
+          <li>
+            <article id="player-1-data">
+              <h2>vous</h2>
+              <h3>Solaris</h3>
+              <p class="player-symbol">0</p>
+              
+            </article>
+          </li>
+          <li>
+            <article id="player-2-data">
+              <h2>IA</h2>
+              <h3>Lunaris</h3>
+              
+              <p class="player-symbol">0</p>
+            </article>
+          </li>
+        </ol>
+        
+      </section>
+        <section id="active-game">
+           <h2>Lunaris</h2>
+           <ul>
+            <li>attaquer</li>
+            <li>défendre</li>
+           </ul>
+           <section id="coop-cheat">
+            <div id="buttons-container">
+                <button class="btn" id="coop-btn">attaquer</button>
+                <button class="btn" id="cheat-btn">défendre</button>
+            </div>
+            <ol id="game-board">
+                
+              <li>(1,1)</li>
+                <li>(3,0)</li>
+                <li>(0,3)</li>
+                <li>(2,2)</li>
+            </ol></section>
+            <div id="avatar">
+              
+              <img src="images/avatar Duel des stratéges.png" id="avatar-image">
+              <div id="avatar-text" style="display:none;">
+                <button id="close">X</button>
+                    <div id="first-hint">
+                      <h3>Étape 1 : Trouver les meilleures réponses de chaque joueur
+                      </h3>
+                      <ul>
+                        <li>
+                          ​​Existe-t-il des stratégies dominées ?
+                        </li>
+                        <li>
+                          Existe-t-il des stratégies faiblement dominées ?
+                        </li>
+                      </ul>
+                      <button id="hint">hint suivant</button>
+                    </div>
+                    <div id="second-hint">
+                      <h3>Étape 2 : Chercher le point stable</h3>
+                      <p>Le choix de chaque joueur est une meilleure réponse au choix de l’autre joueur ( méthode des croisements ripostes).
+                      </p>
+                      <ul>
+                        <li>
+                          Si Lunaris choisit d’attaquer alors la meilleure réponse pour Solaris en termes de gains est ...
+                        </li>
+                        <li>
+                          Si  Lunaris choisit de défendre alors la meilleure réponse pour Solaris est de ...
+
+                        </li>
+                        <li>
+                          Si Lunars choisit d’attaquer alors la meilleure réponse pour Solaris est de ...
+
+                        </li>
+                        <li>Si Lunaris choisit de défendre alors la meilleure réponse pour Solaris est de ...
+                        </li>
+                      </ul>
+                      <button id="answer">Réponse</button>
+                    </div>
+               </div>
+          </div>
+          
+          </div>
+          <div id="game-over-overlay" class="modal">
+            <img id="result-image" alt="Result">
+            <h2 id="game-over-message"></h2>
+            <button id="restart-btn" class="btn">Try Again</button>
+        </div>
+        
+        
+        </section>
+    </main>
+</body>
+<footer>
+  <a href="RoyaumMixte.html">Aller à la strategie mixte</a>
+</footer>
+</html>

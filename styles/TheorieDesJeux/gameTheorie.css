@@ -1,0 +1,16 @@
+#active-game{
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+    /*display:none;*/
+}
+
+
+ #coop-cheat{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:2rem;
+    font-size: 1.5rem;
+    margin-left: -3%;
+ }
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" 
+rel="stylesheet">
+    <link href="styles/savoir.css" rel="stylesheet">
+    <script src="javascript/app2.js" defer></script>
+    <title>La Bataille des Royaumes</title>
+</head>
+<body>
+    <div id="backdrop"></div>
+
+    <header>
+        <a href="index.html">EconoMatrix</a>
+        <a href="savoir.html" id="savoir">Savoir Économique</a>
+    </header>
+    <main>
+<section id="hero">
+   <h1>La Bataille des Royaumes</h1>
+</section>
+<div id="overlay-begin">
+    <img src="images/royaum.png" alt="Royaume Image">
+    <p>
+        Bienvenue dans le monde de Solaris et Lunaris ! Deux royaumes rivaux se disputent une vallée stratégique riche en ressources. 
+        Vous êtes à la tête du royaume de Solaris, et votre adversaire, un algorithme, dirige Lunaris.
+    </p>
+    <button id="close-overlay">Suivant</button>
+</div>
+<div id="highlight-royaum">
+<p>Votre mission est de maximiser vos gains (ressources et territoires) tout en anticipant les actions de votre adversaire. Vous devrez choisir à chaque tour entre deux stratégies simples </p>
+<ul>
+    <li>Attaquer : Prendre des risques pour conquérir du territoire.</li>
+    <li>Défendre : Protéger vos positions, mais sans avancer.</li>
+</ul>
+<h3>Règles : </h3>
+<ol>
+    <li>Vous et Lunaris prenez vos décisions en même temps.</li>
+    <li>Le résultat de chaque manche dépend de vos choix mutuels :
+        <ul>
+            <li>Si vous attaquez pendant que Lunaris attaque également, vous subirez tous deux de lourdes pertes.
+            </li>
+            <li>Si vous attaquez pendant que Lunaris défend, vous pourrez conquérir du territoire.</li>
+            <li>Si vous défendez pendant que Lunaris attaque, vous limiterez les dégâts mais subirez des pertes.
+            </li>
+            <li>Si les deux défendent, il n’y a aucun gain ni perte.
+            </li>
+        </ul>
+    </li>
+    <li>Une matrice de gains détermine le score de chaque joueur pour chaque combinaison de choix.
+    </li>
+</ol>
+<p>Préparez-vous à tester vos compétences stratégiques et à découvrir comment vos décisions influencent les résultats. La victoire appartient à ceux qui planifient avec intelligence et adaptent leur stratégie. Bonne chance, Seigneur de Solaris !  
+</p>
+<h3>Démarrez en : </h3> </div>
+<section id="royaum">
+    <a href="RoyaumPure.html">en stratégie pure</a>
+    <a href="RoyaumMixte.html">en stratégie mixte</a>
+</section>
+</main>
+
+<footer></footer>
+</body>
+</html>

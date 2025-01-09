@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/TheorieDesJeux/prison.css">
+    <script src="javascript/theorieDesJeux/prison.js" defer></script>
+    <title>Le Dilemme du Prisonier</title>
+</head>
+<body>
+  <div id="backdrop"></div>
+    <header>
+      <a href="index.html">EconoMatrix</a>
+    </header>
+    <main>
+      <section id="hero">
+       <h1>Le Dilemme du Prisonier</h1>
+       <button id="scenario-btn">scénario</button>
+          <div id="scenario-overlay" class="overlay"> 
+            <p>Imaginons deux suspects arrêtés pour un crime et interrogés séparément.
+              Chacun peut choisir de coopérer en restant silencieux ou de trahir l'autre en avouant.
+              Si les deux se taisent, ils reçoivent une peine légère.
+              Si l'un trahit et l'autre reste silencieux, le traître est libéré tandis que l'autre reçoit une peine sévère.
+              Mais si les deux trahissent, ils reçoivent une peine modérée.
+              Ce dilemme montre que la poursuite individuelle de l'intérêt personnel peut empêcher la coopération bénéfique pour tous.</p>
+            </div>
+       
+      </section>
+      <section id="active-game">
+        <a href="TheoriesDeJeux.html"><button class="btn" id="retour">retour aux theories de jeux</button></a>
+        <h2>L'autre criminal</h2>
+        <div id="other-choice">
+        <p>dénonce</p>
+        <p>se taire</p></div>
+        <section id="coop-cheat">
+         <div id="buttons-container">
+             <button class="btn" id="coop-btn">dénonce</button>
+             <button class="btn" id="cheat-btn">se taire</button>
+         </div>
+         <div id="avatarplusgame">
+         <ol id="game-board">
+             
+          <li>(-2,-2)</li>
+          <li>(0,-5)</li>
+          <li>(-5,0)</li>
+          <li>(-1,-1)</li>
+          
+         </ol>
+         <img src="images/avatar Duel des stratéges.png" id="avatar-image">
+         <div id="avatar-text" style="display:none;">
+          <button id="close">X</button>
+          <div id="first-hint">
+            <h3>Étape 1 : Trouver les meilleures réponses de chaque joueur
+            </h3>
+            <ul>
+              <li>
+                ​​Existe-t-il des stratégies dominées ?
+              </li>
+              <li>
+                Existe-t-il des stratégies faiblement dominées ?
+              </li>
+            </ul>
+            <button id="hint">hint suivant</button>
+          </div>
+          <div id="second-hint">
+            <h3>Étape 2 : Chercher stratégie strictement dominante</h3>
+           
+            <ul>
+              <li>
+                Si l'autre criminel dénonce : Dénoncer donne −2−2, tandis que se taire donne −5−5. Dénoncer est meilleur.
+              </li>
+              <li>
+                Si l'autre criminel se tait : Dénoncer donne 00, tandis que se taire donne −1−1. Dénoncer est encore meilleur.
+
+              </li>
+             
+            </ul>
+            <button id="answer">Réponse</button>
+          </div>
+     </div></div>
+         </section>
+        
+       </div>
+       <div id="game-over-overlay" class="modal">
+         <h2 id="game-over-message"></h2>
+     </div>
+     
+     </section>
+    <div id="cas-overlay" class="overlay">
+       <p id="cas1">Vous vous êtes dénoncés mutuellement et avez été condamnés à deux ans de prison.</p>
+       <p id="cas2">Votre ami vous a dénoncé pour sauver sa propre peau. Pendant qu'il reste libre, vous avez été condamné à cinq ans de prison.</p>
+       <p id="cas3">Votre ami était resté silencieux, mais vous, ne voulant pas prendre de risque, l'avez dénoncé.
+         Il passera cinq ans en prison, tandis que vous êtes libre. Félicitations.</p>
+       <p id="cas4">Vous vous êtes protégés mutuellement et avez exercé votre droit au silence.
+        Vous ne passerez chacun qu'une année en prison avant d'être libérés.</p>
+       <button id="again">Rejouer</button>
+       <button id="other">Autres jeux</button>
+    </div>
+      </section>
+    </main>
+    <footer>
+
+
+    </footer>
+   
+</body>
+</html>

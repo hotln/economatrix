@@ -1,0 +1,239 @@
+.overlay{
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 100%;
+    max-width: 70rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    font-size: 1.5rem;
+    z-index: 100;
+    color: black;
+}
+#scenario-overlay {
+  position: relative;
+  width: 70%; /* Tüm genişliği kapla */
+  height: 90vh; /* Tüm pencere yüksekliğini kapla */
+  z-index: 100;
+  left:15%;
+  margin-top: -10rem;
+}
+
+#scenario-overlay img {
+ 
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Overlay alanını doldur */
+    object-fit: cover; /* Resmi alanın tamamına yay */
+    z-index: 100;
+    opacity: 0.6; /* İsteğe bağlı şeffaflık */
+    pointer-events: none; /* Tıklamaları devre dışı bırak */
+}
+
+#scenario-overlay p {
+position: relative;
+top: 20%; /* Yukarıdan boşluk */
+left: 50%;
+transform: translate(-50%, -50%);
+color: black;
+width: 60rem;
+text-shadow: 3px 3px 7px white;
+font-size: 1.5rem;
+text-align: center;
+z-index: 200;
+background-color: rgb(250, 241, 241,0.5);
+}
+#scenario-overlay button{
+  font-size: 2.5rem;
+  cursor: grabbing;
+}
+
+#questionbtns{
+  display:flex;
+  gap:13rem;
+  position: absolute;
+  bottom: 40%;
+  left:18%;
+  z-index: 1000;
+}
+
+#scenario-overlay button:hover {
+  background-color: #05697a;
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+   
+    z-index: 1;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+  }
+  
+  .tree {
+    
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .node {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+  
+  .branches {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .branch {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .sub-branches {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  .branch:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: black;
+    transform: translateY(-50%);
+  }
+  
+  .branch:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 2px;
+    background: black;
+  }
+  
+  .branch:first-child:after {
+    top: 50%;
+  }
+  
+  .branch:last-child:after {
+    bottom: 50%;
+  }
+  
+  .branch:only-child:after {
+    display: none;
+  }
+  
+  .sub-branches .branch {
+    margin: 5px 0;
+  }
+  
+  .sub-branches .branch:before {
+    top: 50%;
+  }
+  
+  .sub-branches .branch:after {
+    top: 0;
+    bottom: 0;
+  }
+  
+  .sub-branches .branch:first-child:after {
+    top: 50%;
+  }
+  
+  .sub-branches .branch:last-child:after {
+    bottom: 50%;
+  }
+  
+  .sub-branches .branch:only-child:after {
+    display: none;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+   left:5rem;
+    z-index: 1;
+    margin-top: -1.3rem;
+}
+.dropdown-content button{
+  width: 4rem;
+  border-color: #0000006c;
+  border-style:dashed;
+  cursor: grab;
+}
+.dropdown-content button:hover{
+  background-color: #045a62e6;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#decision{
+    display:flex;
+    gap: 2rem;
+}
+.decisionQ{
+    display:none;
+}
+button{
+  background-color: #06808be6;
+   color: white;
+   border-color: transparent;
+}
+#hero{
+  background-color: #06808be6;
+   color: white;
+text-align: center;
+   padding-top: 3rem;
+   margin-top: -1.5em;
+   font-size: 2.5rem;
+   padding-bottom: 1rem;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+margin-top: 50%;
+}

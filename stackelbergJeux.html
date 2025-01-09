@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/TheorieDesJeux/stackelberg.css" rel="stylesheet">
+    <script src="javascript/stackelberg.js" defer></script>
+    
+    <title>Duopole de Stackelberg</title>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <header>
+      <a href="index.html">EconoMatrix</a>
+    </header>
+    <main>
+        <section id="hero">
+            
+            <h1>Bataille des chocolatiers - Duopole de Stackelberg</h1>
+            
+            
+            
+               <div id="scenario-overlay"> 
+                <img src="images/choco.png">
+                 <p>Deux entreprises de chocolat, ChocoLeader (le leader) et ChocoFollower (le follower), rivalisent pour maximiser leurs profits sur le marché des tablettes de chocolat. ChocoLeader prend sa décision en premier, tandis que ChocoFollower réagit en fonction de cette décision pour maximiser ses propres profits.
+                    L’objectif est de simuler un équilibre de Stackelberg, où le leader anticipe correctement la réaction optimale du follower.
+                    
+                    <p id="question">Quelle entreprise aimeriez-vous être ?</p>
+                    <div id="questionbtns">
+                    <button id="leader">ChocoLeader</button>
+                    <button id="follower">ChocoFollower</button></div>
+               </div>
+            
+           </section>
+           <div class="tree">
+            <!-- Root Node -->
+            <div class="node root"> ChocoLeader</div>
+            <div class="branches">
+              <!-- First Branch -->
+              <div class="branch">
+                <div class="label">180</div>
+                <div class="node">ChocoFollower</div>
+                <div class="sub-branches">
+                  <div class="branch">
+                    <div class="label">180</div>
+                   
+                    <div class="dropdown">
+                 
+                        
+                          <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                              <button class="correct">64.8,64.8</button>
+                                <button class="dropdown-item">54,72</button>
+                                  <button class="dropdown-item">32.4,64.8</button>
+                                    <button class="dropdown-item">72,54</button>
+                                    <button class="dropdown-item">57.6,57.6</button>
+                                <button class="dropdown-item">28.8,43.2</button>
+                                  <button class="dropdown-item">64.8,32.4</button>
+                                    <button class="dropdown-item">43.2,28.8</button>
+                                    <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="branch">
+                    <div class="label">240</div>
+                    
+                    <div class="dropdown">
+                 
+                        
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="correct">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="branch">
+                    <div class="label">360</div>
+                    
+                    <div class="dropdown">
+                 
+                    
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="correct">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Second (Central) Branch -->
+              <div class="branch">
+                <div class="label">240</div>
+                <div class="node">ChocoFollower</div>
+                <div class="sub-branches">
+                    <div class="branch">
+                      <div class="label">180</div>
+                     
+                      <div class="dropdown">
+                 
+                        
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="correct">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="branch">
+                      <div class="label">240</div>
+                      
+                      <div class="dropdown">
+                 
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="correct">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="branch">
+                      <div class="label">360</div>
+                      
+                      <div class="dropdown">
+                 
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="correct">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        
+              <!-- Third Branch -->
+              <div class="branch">
+                <div class="label">360</div>
+                <div class="node"> ChocoFollower</div>
+                <div class="sub-branches">
+                    <div class="branch">
+                      <div class="label">180</div>
+                     
+                      <div class="dropdown">
+                 
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="correct">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="branch">
+                      <div class="label">240</div>
+                      
+                      <div class="dropdown">
+                 
+                        
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="correct">43.2,28.8</button>
+                                <button class="dropdown-item">0,0</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="branch">
+                      <div class="label">360</div>
+                     
+                      <div class="dropdown">
+                 
+                       
+                        <button class="btn dropdown-btn">(...,...)</button>
+                         
+      
+                          <div class="dropdown-content">
+                            <button class="dropdown-item">64.8,64.8</button>
+                            <button class="dropdown-item">54,72</button>
+                              <button class="dropdown-item">32.4,64.8</button>
+                                <button class="dropdown-item">72,54</button>
+                                <button class="dropdown-item">57.6,57.6</button>
+                            <button class="dropdown-item">28.8,43.2</button>
+                              <button class="dropdown-item">64.8,32.4</button>
+                                <button class="dropdown-item">43.2,28.8</button>
+                                <button class="correct">0,0</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <p class='decisionQ' id="leaderSentence">Vous êtes ChocoLeader. ChocoFollower va réagir à votre décision.</p>
+          <p class='decisionQ' id="followerSentence"></p>
+          <div id="decision">
+            
+            <p>Choisissez la quantité de chocolat que vous voulez produire :</p>
+            <button id="180">180</button>
+            <button id="240">240</button>
+            <button id="360">360</button></div>
+            <div id="win-overlay" class="overlay">
+                <p>
+                    Félicitations, vous avez atteint l’équilibre de Stackelberg! Après votre choix, pour profiter
+                    le max, ChocoFollower a produit 180 chocolats. Vous avez le plus grand profit possible.
+                    
+                </p>
+                <button id="againplay">jouez encore</button>
+                    <button id="other">Aller à d'autres théories</button>
+            </div>
+            <div id="lose-overlay" class="overlay">
+            <p>
+                Soit ce n’est pas un équilibre optimal soit les profits possibles ne sont pas correctement replacés. Réessayez pour maximiser vos profits !
+                
+            </p>
+            <button id="againtry">réessayez</button>
+        </div>
+          
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

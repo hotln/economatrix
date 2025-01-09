@@ -1,0 +1,240 @@
+body{
+    background-color: rgb(245, 245, 242);
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+  }
+  li{
+    text-decoration: none;
+  }
+  header{
+    height:5rem;
+    background-color: #06808be6 ;
+    padding-top: 2rem;
+    
+  }
+  header a{
+    font-size: 2rem;
+    padding:1rem 1rem 1rem 1rem;
+  }
+  header a:hover{
+    background-color: #06808be6 ;
+    border-radius: 1rem;
+  }
+  h1{
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top:1rem;
+  }
+  #highlight{
+    display: grid;
+    list-style: none;
+    margin: 1rem 0;
+    padding:0;
+    grid-template-columns: repeat(3, 20rem) ;
+    grid-template-rows: repeat(3, 15rem) ;
+    justify-content:center;
+    gap:2rem;
+    font-size: 3rem;
+  }
+  #jeuxSim{
+    display: grid;
+    list-style: none;
+    margin: 1rem 0;
+    padding:0;
+    grid-template-columns: repeat(2, 40rem) ;
+    grid-template-rows: repeat(2, 10rem) ;
+    justify-content:center;
+    gap:2rem;
+    font-size: 3rem;
+    
+  }
+  #jeuxSim a{
+    background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+    padding-top: 2rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    border-radius: 1rem;
+  }
+  #jeuxSim a:hover{
+    background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+    
+  }
+  #highlight a{
+    background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+    padding-top: 2.5rem;
+    padding-left:2rem;
+    border-radius: 1rem;
+  }
+  #savoir{
+    margin-left: 60%;
+  }
+  footer{
+    height: 3rem;
+    background-color: #06808be6;
+  }
+  #thDeJeux a {
+    font-size: 3rem;
+    padding: 2rem 2rem 2rem 2rem;
+   background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+   margin-left: 8rem;
+   margin-right: 4rem;
+   border-radius: 1rem;
+   }
+   #thDeJeux{
+   padding-top: 5rem;}
+   #royaum a {
+    font-size: 3rem;
+    padding: 2rem 2rem 2rem 2rem;
+   background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+   margin-left: 12rem;
+   margin-right: 4rem;
+   border-radius: 1rem;
+   }
+   #royaum{
+   padding-top: 5rem;
+  padding-bottom:5rem;}
+   #royaum a:hover{
+    background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+   }
+
+   #text{
+    margin-left: 15%;
+    margin-right:15%;
+    font-size: larger;
+
+   }
+   #text li{
+    list-style-type: circle;
+   }
+   .carousel-container {
+    width: 40rem;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    margin-left: 29rem;
+   padding-bottom:2rem;
+
+ 
+  }
+ 
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+   
+  }
+ 
+  .carousel-slide img {
+    width: 40rem;
+    height:30rem;
+    border-radius:5rem ;
+   
+   
+  }
+ 
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+ 
+  #prevBtn {
+    left: 2rem;
+  }
+ 
+  #nextBtn {
+    right: 2rem;
+  }
+  #overlay-begin {
+    position: relative;
+  width: 70%; /* Her bir resim divi genişlik */
+  overflow: hidden; /* Resim taşarsa gizle */
+  height: 50rem;
+    z-index: 100;
+    left:15%;
+    top:-15rem;
+
+}
+
+#overlay-begin img {
+  width: 100%;
+  height: 38rem;
+/*  object-fit: cover; /* Resmi kesmeden uygun şekilde boyutlandır */
+  opacity: 0.7;
+  background-color: white;
+  z-index: 100;
+}
+
+#overlay-begin p {
+  position: absolute;
+  top: 20%; /* Yukarıdan boşluk */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  
+  text-shadow: 3px 3px 7px white;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 200;
+}
+
+#overlay-begin button {
+  position:absolute;
+margin-top:4rem;
+  left: 44%;
+ /* transform: translate(-50%, 0);*/
+  padding-bottom:10px;
+  padding-top:10px;
+  font-size: 1rem;
+  background-color: #06808be6;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 200;
+  width:8rem;
+  height: 3rem;
+}
+
+#overlay-begin button:hover {
+    background-color: #05697a;
+}
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 99; /* Backdrop z-index */
+}
+ul{
+  list-style:circle;
+}
+ol{
+  list-style: decimal;
+}
+#highlight-royaum{
+  font-size: large;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+

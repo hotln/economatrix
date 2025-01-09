@@ -1,0 +1,137 @@
+
+body{
+    margin:0;
+    font-family: "Amatic SC", system-ui;
+    color: rgb(42, 38, 38);
+    background-color: rgb(240, 226, 226);
+}
+header{
+    background-color: #06808be6 ;
+    color: white;
+    padding:2rem 5%;
+    text-align: center;
+    font-size: 2rem;
+}
+.btn{
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color:#06808be6  ;
+    border: 1px solid #06808be6 ;
+    color: white;
+    border-radius: 4px;
+    cursor:pointer
+}
+.btn-alt{
+    background-color: #06808be6 ;
+    border-color: black;
+    color: white;
+
+}
+.btn:hover{
+   background-color:#06808be6 ; 
+   border-color: #06808be6 ;
+}
+.btn-alt:hover{
+    background-color:rgb(200, 169, 228);
+}
+#avatar img{
+    height: 15rem;
+    margin-left: 100%;
+    margin-top: -15rem;
+}
+
+#avatar {
+    position: relative;
+    display: inline-block;
+    
+    
+}
+
+#avatar-text {
+    position: absolute;
+    width: 20rem;
+    top:-27rem;  /* Resmin üstünde bir mesafe bırak */
+    left: 12rem;
+    background-color: rgba(255, 255, 255, 0.8);  /* Yarı saydam bir arka plan */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;  /* Resmin üstünde görünmesini sağlamak için */
+    margin-left: 100%;
+}
+header a h2{
+    margin-right: 91rem;
+    margin-top: -2rem;
+    text-decoration: none;
+    
+    font-size: 2rem;
+    color: white;
+}
+header h1{
+    margin-top: -3rem;
+}
+#info-question{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.dropdown-container {
+    display: grid;
+    list-style: none;
+    margin: 1rem 0;
+    padding:0;
+    grid-template-columns: repeat(2, 6rem) ;
+    grid-template-rows: repeat(2, 6rem) ;
+    justify-content:center;
+    gap:0.5rem;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.dropdown-btn {
+    background-color: #089aa7e6 ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width:10rem;
+    border-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(240, 226, 226);
+    z-index: 1;
+    margin-top: 3rem;
+}
+
+.dropdown-content button {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding:1rem rem;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown p{
+    font-size: 1.5rem;
+    margin-left: -5rem;
+    
+  }
+ 
+
+
+
