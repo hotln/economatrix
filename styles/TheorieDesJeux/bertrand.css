@@ -1,68 +1,46 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(240, 226, 226);
-}
-header {
-    padding: 2rem 5%;
-    font-size: 2rem;
-}
+
 #avatar {
     display: flex;
 }
 #avatar img {
     height: 12rem;
+    position: fixed;
+    left:80%;
+    bottom:10%;
 }
-header a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
+#overlay-begin {
+    margin-top:-1%;
+    padding-top: 10%;
+    padding-bottom: 5rem;
 }
-header a:hover {
-    background-color: #06808be6;
-    border-radius: 1rem;
+#overlay-begin img{
+    margin-top: -3%;
 }
+#overlay-begin p{
+    padding-top:10rem ;
+}
+#overlay-begin button{
+    margin-top:5rem ;
+   
+}
+#backdrop{
+    display:none;
+  }
+
 #savoir {
     margin-left: 60%;
 }
-#hero {
-    background-color: #06808be6;
-    color: rgb(240, 226, 226);
-    padding-top: 1%;
-    margin-top: -7%;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-#hero h1 {
-    font-size: 4rem;
-}
-button{
-   background-color: #06808be6;
-   color: white;
-   border-color: transparent;
-}
-button:hover{
-background-color: #056f78e6;
-box-shadow: 0 2px 8px white;
-}
-
-#backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1;
+#retour{
+    margin-top:1%;
 }
 .overlay {
     display: none;
-    position: absolute;
-    top: calc(100% - 15rem);
+    position: fixed;
+    top: calc(100% - 35rem);
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    max-width: 30rem;
+    max-width: 50rem;
     background-color: white;
     padding: 1rem;
     border-radius: 6px;
@@ -71,6 +49,7 @@ box-shadow: 0 2px 8px white;
     color: black;
     font-size: 1rem;
     text-align: center;
+    font-size: 2rem;
 }
 #indice-overlay h2 {
     font-size: 1rem;
@@ -78,8 +57,8 @@ box-shadow: 0 2px 8px white;
 }
 #indice-overlay{
     display: none;
-    position: absolute;
-    top: calc(100% - 30rem);
+    position: fixed;
+    top: calc(100% - 40rem);
     left: 75%;
     transform: translateX(-50%);
     width: 70%;
@@ -138,6 +117,8 @@ box-shadow: 0 2px 8px white;
     color:black;
 }
 #player-gameboard button:hover {
+    background-color: rgb(172, 138, 138);
+
     cursor: pointer;
     box-shadow: 0 4px 16px rgba(99, 81, 81, 0.26);
 }
@@ -154,16 +135,18 @@ box-shadow: 0 2px 8px white;
 }
 .gameboard p {
     margin-left: 2%;
+    background-color:rgb(208, 168, 168);
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    
 }
 #jeux h2 {
     margin-left: 45%;
     margin-bottom: -2%;
 }
-footer {
-    height: 3rem;
+#jeux{
+    padding-bottom: 3rem;
 }
-
-
 form {
     margin-top: 1rem;
     text-align: center;
@@ -194,62 +177,19 @@ form input {
 #othertheories3-btn {
     display: none;
 }
-#overlay-begin {
-    position: absolute;
-  width: 70%; /* Her bir resim divi genişlik */
-  overflow: hidden; /* Resim taşarsa gizle */
-  height: 45rem;
-    z-index: 200;
-    left:15%;
-    top: 10%;
+
+#ai-gameboard button:hover{
+    background-color: rgb(208, 168, 168);
+
 }
 
-#overlay-begin img {
-  width: 100%;
-  height: 38rem;
-/*  object-fit: cover; /* Resmi kesmeden uygun şekilde boyutlandır */
-  opacity: 0.85;
-  background-color: white;
-  z-index: 100;
-}
-
-#overlay-begin p {
-  position: absolute;
-  top: 30%; /* Yukarıdan boşluk */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  background-color: rgb(255, 255, 255,0.5);
-  text-shadow: 3px 3px 7px white;
-  font-size: 2rem;
-  text-align: center;
-  z-index: 200;
-  width: 90%;
-}
-
-#overlay-begin button {
-  position:absolute;
-top:60%;
-  left: 44%;
- /* transform: translate(-50%, 0);*/
-  padding-bottom:10px;
-  padding-top:10px;
-  font-size: 1rem;
-  background-color: #06808be6;
-  color: white;
-  border: none;
-  border-radius: 3rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 200;
-  width:8rem;
-  height: 3rem;
-}
-
-#overlay-begin button:hover {
-    background-color: #05697a;
-}
 .btns{
     display: flex;
     gap:3rem;
+}
+.button-container{
+    display: flex;
+    gap:20%;
+    left:40%;
+
 }

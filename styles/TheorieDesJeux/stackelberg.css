@@ -14,75 +14,54 @@
     z-index: 100;
     color: black;
 }
+#retour{
+  margin-top: 1%;
+}
 #scenario-overlay {
-  position: relative;
-  width: 70%; /* Tüm genişliği kapla */
-  height: 90vh; /* Tüm pencere yüksekliğini kapla */
+  position: absolute;
+width: 100%; /* Her bir resim divi genişlik */
+overflow: hidden; /* Resim taşarsa gizle */
+height: 100%;
   z-index: 100;
-  left:15%;
-  margin-top: -10rem;
+  background-color: rgb(240, 226, 226);
+  justify-content: center;
+  margin-top: 1%;
+ display: flex;
 }
 
 #scenario-overlay img {
- 
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Overlay alanını doldur */
-    object-fit: cover; /* Resmi alanın tamamına yay */
-    z-index: 100;
-    opacity: 0.6; /* İsteğe bağlı şeffaflık */
-    pointer-events: none; /* Tıklamaları devre dışı bırak */
+width: 50%;
+height: 50%;
+z-index: 100;
 }
 
 #scenario-overlay p {
-position: relative;
+position: absolute;
 top: 20%; /* Yukarıdan boşluk */
-left: 50%;
-transform: translate(-50%, -50%);
-color: black;
-width: 60rem;
-text-shadow: 3px 3px 7px white;
-font-size: 1.5rem;
 text-align: center;
+font-size: 2rem;
 z-index: 200;
-background-color: rgb(250, 241, 241,0.5);
+margin: 15% 7%;
 }
 #scenario-overlay button{
-  font-size: 2.5rem;
-  cursor: grabbing;
+  z-index: 200;
+ 
 }
-
 #questionbtns{
-  display:flex;
-  gap:13rem;
   position: absolute;
-  bottom: 40%;
-  left:18%;
-  z-index: 1000;
+  top:90%;
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+
 }
 
-#scenario-overlay button:hover {
-  background-color: #05697a;
-}
 
 #backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 1);
-   
-    z-index: 1;
+    display:none
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-  }
+
   
   .tree {
     
@@ -197,43 +176,27 @@ background-color: rgb(250, 241, 241,0.5);
     margin-top: -1.3rem;
 }
 .dropdown-content button{
-  width: 4rem;
+  width: 10rem;
   border-color: #0000006c;
   border-style:dashed;
   cursor: grab;
+  border-radius: 0;
 }
-.dropdown-content button:hover{
-  background-color: #045a62e6;
 
-}
 .dropdown:hover .dropdown-content {
     display: block;
 }
 #decision{
     display:flex;
     gap: 2rem;
+    margin-left: 17%;
 }
 .decisionQ{
     display:none;
-}
-button{
-  background-color: #06808be6;
-   color: white;
-   border-color: transparent;
-}
-#hero{
-  background-color: #06808be6;
-   color: white;
-text-align: center;
-   padding-top: 3rem;
-   margin-top: -1.5em;
-   font-size: 2.5rem;
-   padding-bottom: 1rem;
+    margin-left: 17%;
+
 }
 
-header a{
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-margin-top: 50%;
-}
+
+
+

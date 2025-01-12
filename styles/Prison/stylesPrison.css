@@ -1,53 +1,14 @@
-body {
-    margin: 0;
-    font-family: "Amatic SC", system-ui;
-    color: rgb(42, 38, 38);
-    background-color: rgb(240, 226, 226);
-}
+
 ul{
-    list-style: none;
     display: flex;
     gap: 3rem;
     margin-left: 39%;
     font-size: 1.5rem;
 }
 
-header {
-    background-color:  #06808be6 ;
-    color: white;
-    padding: 1rem 4%;
-    text-align: center;
-    font-size: 2rem;
-}
-header a{
-    font-size: 2rem;
-    color: white;
-    margin-right: 85rem;
-    text-decoration: none;
-}
-
-.btn {
-    font: inherit;
-    padding: 0.5rem 1.5rem;
-    background-color:  #06808be6 ;
-    border: 1px solid  #06808be6 ;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color:  #06747ee6 ;
-    border-color: #06808be6 ;
-}
-
-.btn-alt:hover {
-    background-color: rgb(200, 169, 228);
-}
-
 #avatar img {
     height: 22rem;
-    margin-left: 100%;
+    margin-left: 50rem;
     margin-top: -22rem;
 }
 
@@ -61,7 +22,6 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     font-size: 2rem;
     z-index: 1; /* Karartmanın altında olacak şekilde daha düşük bir değer */
 }
@@ -70,7 +30,7 @@ header a{
     position: absolute;
     width: 20rem;
     top: -35rem; 
-    left: 25rem;
+    left: 40rem;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
@@ -90,25 +50,18 @@ header a{
     margin-top: 4rem;
     margin-left:-3rem;
 }
-footer a{
-    background-color:  #06808be6 ;
-    color: rgba(255, 255, 255, 0.8);
-    margin-left: 80%;
-    text-decoration: none;
-    font-size: 1rem;
-    padding:1rem 1rem 1rem 1rem;
-    
-}
+
 footer{
-    margin-top: -8rem;
-}
+    display: grid;
+    justify-items: end;
+margin-top: -8rem;}
 #buttons-container {
     display: flex;
     flex-direction: column; /* Butonları alt alta yerleştirir */
     gap: 4rem; /* Butonlar arasındaki boşluğu belirler */
     position: absolute; /* Kesin konumlandırma */
-    left: 22rem; /* Oyun karelerinin soluna taşır */
-    top: 47rem; /* Butonların dikey konumunu ayarlar */
+    left: 25rem; /* Oyun karelerinin soluna taşır */
+    
 }
 
 #coop-btn, #cheat-btn {
@@ -169,29 +122,13 @@ footer{
 #game-over-overlay button {
     position: relative; /* Görselin üzerinde görünmesi için */
     z-index: 2; /* Görselin üzerinde kalır */
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: white;
-    background-color: #06808be6;
-    border: none;
     top:30%;
     border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-top: 1rem;
 }
 
-#game-over-overlay button:hover {
-    background-color: #05697a;
-}
-#avatar-text button{
-    color: white;
-    background-color: #06808be6;
-    border: none;
-}
-#avatar-text button:hover{
-    background-color: #05697a;
-}
+
+
 #close{
     margin-left: 80%;
 

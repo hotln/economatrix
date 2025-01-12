@@ -1,43 +1,10 @@
-body{
-    background-color: rgb(245, 245, 242);
-    
-    margin: 0;
-    padding: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-   
+
+#backdrop{
+  display:none;
 }
-
-
-a{
-    text-decoration: none;
-    color: black;
-  }
-  li{
-    text-decoration: none;
-  }
-  header{
-    height:5rem;
-    background-color: #06808be6 ;
-    padding-top: 2rem;
-    
-  }
-  header a{
-    font-size: 2rem;
-    padding:1rem 1rem 1rem 1rem;
-  }
-  header a:hover{
-    background-color: #06808be6 ;
-    border-radius: 1rem;
-  }
-  h1{
-    font-size: 4rem;
-    font-style: italic;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top:1rem;
-  }
+#retour{
+  margin-top:1%;
+}
   #highlight{
     display: grid;
     list-style: none;
@@ -70,6 +37,8 @@ a{
   }
   #jeuxSim a:hover{
     background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
     
   }
   #highlight a{
@@ -81,35 +50,34 @@ a{
   #savoir{
     margin-left: 60%;
   }
-  footer{
-    height: 3rem;
-    background-color: #06808be6;
-  }
-  #thDeJeux a {
+   .royaum a {
     font-size: 3rem;
     padding: 2rem 2rem 2rem 2rem;
    background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
-   margin-left: 8rem;
-   margin-right: 4rem;
    border-radius: 1rem;
    }
-   #thDeJeux{
-   padding-top: 5rem;}
-   #royaum a {
-    font-size: 3rem;
-    padding: 2rem 2rem 2rem 2rem;
-   background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
-   margin-left: 12rem;
-   margin-right: 4rem;
-   border-radius: 1rem;
+   .royaum{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin: 5% 0; 
    }
-   #royaum{
-   padding-top: 5rem;
-  padding-bottom:5rem;}
-   #royaum a:hover{
+   .royaum a:hover{
     background: radial-gradient(circle,#06808be6 ,#0997a4e6 );
-   }
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 
+   }
+   #carousel button {
+    position: absolute;
+    top: 52%;
+    z-index: 500;
+    transform: translateY(-80%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
    #text{
     margin-left: 15%;
     margin-right:15%;
@@ -126,10 +94,12 @@ a{
     position: relative;
     margin-left: 29rem;
    padding-bottom:2rem;
-
- 
+   padding-top: 2rem;
   }
- 
+ #thDeJeux{
+  margin-top:12%;
+  display: flex;
+ }
   .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -144,16 +114,7 @@ a{
    
   }
  
-  button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-80%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
+
  
   #prevBtn {
     left: 2rem;
@@ -162,70 +123,9 @@ a{
   #nextBtn {
     right: 2rem;
   }
-  #overlay-begin {
-    position: relative;
-  width: 70%; /* Her bir resim divi genişlik */
-  overflow: hidden; /* Resim taşarsa gizle */
-  height: 50rem;
-    z-index: 100;
-    left:15%;
-    top:-15rem;
-
-}
-
-#overlay-begin img {
-  width: 100%;
-  height: 38rem;
-/*  object-fit: cover; /* Resmi kesmeden uygun şekilde boyutlandır */
-  opacity: 0.7;
-  background-color: white;
-  z-index: 100;
-}
-
-#overlay-begin p {
-  position: absolute;
-  top: 20%; /* Yukarıdan boşluk */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
   
-  text-shadow: 3px 3px 7px white;
-  font-size: 2rem;
-  text-align: center;
-  z-index: 200;
-}
 
-#overlay-begin button {
-  position:absolute;
-margin-top:4rem;
-  left: 44%;
- /* transform: translate(-50%, 0);*/
-  padding-bottom:10px;
-  padding-top:10px;
-  font-size: 1rem;
-  background-color: #06808be6;
-  color: white;
-  border: none;
-  border-radius: 3rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 200;
-  width:8rem;
-  height: 3rem;
-}
 
-#overlay-begin button:hover {
-    background-color: #05697a;
-}
-#backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 1);
-  z-index: 99; /* Backdrop z-index */
-}
 ul{
   list-style:circle;
 }
@@ -237,4 +137,7 @@ ol{
   margin-left: 4rem;
   margin-right: 4rem;
 }
-
+#back{
+  font-size: 3rem;
+  margin: 2rem 0 0 2rem;
+}

@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 226, 226);
+    font-family: "Ubuntu", serif;
+    overflow-x: hidden;
+}
+header {
+    padding: 1rem 4% 0.5rem;
+    font-size: 2rem;
+    z-index: 2;
+}
+header h1{
+    text-align: center;
+    margin-top:-0.5rem;
+}
+header a {
+    
+    font-size: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+header a:hover {
+    background-color: #06808be6;
+    border-radius: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+li{
+    list-style: none;
+}
+header{
+    background-color:  #06808be6 ;
+    color: white;
+}
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+  }
+  button{
+    background-color: #06808be6;
+    padding-bottom:0.5rem;
+    padding-top:0.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-top: -0.5rem;    
+    color: white;   
+    border-radius: 1rem;
+    border-color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+button:hover{
+    background-color: #057079e6;
+
+}
+footer{
+    height: 3rem;
+
+}
+#overlay-begin {
+    position: absolute;
+  width: 100%; /* Her bir resim divi genişlik */
+  overflow: hidden; /* Resim taşarsa gizle */
+  height: 100%;
+    z-index: 100;
+    background-color: rgb(240, 226, 226);
+    justify-content: center;
+    margin-top: 1%;
+   display: flex;
+}
+
+#overlay-begin img {
+  width: 50%;
+  height: 50%;
+  z-index: 100;
+}
+
+#overlay-begin p {
+  position: absolute;
+  top: 20%; /* Yukarıdan boşluk */
+  text-align: center;
+  font-size: 2rem;
+  z-index: 200;
+  margin: 15% 7%;
+}
+#overlay-begin button{
+    position: absolute;
+    z-index: 200;
+    top:75%;
+}

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/TheorieDesJeux/prison.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <script src="javascript/theorieDesJeux/prison.js" defer></script>
     <title>Le Dilemme du Prisonier</title>
 </head>
@@ -11,24 +15,16 @@
   <div id="backdrop"></div>
     <header>
       <a href="index.html">EconoMatrix</a>
+      <h1>Le Dilemme du Prisonier</h1>
+      
     </header>
     <main>
-      <section id="hero">
-       <h1>Le Dilemme du Prisonier</h1>
-       <button id="scenario-btn">scénario</button>
-          <div id="scenario-overlay" class="overlay"> 
-            <p>Imaginons deux suspects arrêtés pour un crime et interrogés séparément.
-              Chacun peut choisir de coopérer en restant silencieux ou de trahir l'autre en avouant.
-              Si les deux se taisent, ils reçoivent une peine légère.
-              Si l'un trahit et l'autre reste silencieux, le traître est libéré tandis que l'autre reçoit une peine sévère.
-              Mais si les deux trahissent, ils reçoivent une peine modérée.
-              Ce dilemme montre que la poursuite individuelle de l'intérêt personnel peut empêcher la coopération bénéfique pour tous.</p>
-            </div>
+         
        
-      </section>
       <section id="active-game">
-        <a href="TheoriesDeJeux.html"><button class="btn" id="retour">retour aux theories de jeux</button></a>
-        <h2>L'autre criminal</h2>
+        <a href="TheoriesDeJeux.html"><button class="btn" id="retour">↩ théories des jeux</button></a>
+        <p id="scenario">Vous avez été attrapé en train de commettre un crime avec votre ami. Lors de l'interrogatoire, vous pouvez garder le silence ou rejeter la faute sur votre ami. Votre choix déterminera votre destin ainsi que celui de votre ami.</p>
+        <h2>Votre complice</h2>
         <div id="other-choice">
         <p>dénonce</p>
         <p>se taire</p></div>
@@ -46,7 +42,7 @@
           <li>(-1,-1)</li>
           
          </ol>
-         <img src="images/avatar Duel des stratéges.png" id="avatar-image">
+         <img src="images/prisoner.png" id="avatar-image">
          <div id="avatar-text" style="display:none;">
           <button id="close">X</button>
           <div id="first-hint">
@@ -67,10 +63,10 @@
            
             <ul>
               <li>
-                Si l'autre criminel dénonce : Dénoncer donne −2−2, tandis que se taire donne −5−5. Dénoncer est meilleur.
+                Si l'autre criminel dénonce : Dénoncer donne (−2−2), tandis que se taire donne (−5−5). Dénoncer est meilleur.
               </li>
               <li>
-                Si l'autre criminel se tait : Dénoncer donne 00, tandis que se taire donne −1−1. Dénoncer est encore meilleur.
+                Si l'autre criminel se tait : Dénoncer donne (0,0), tandis que se taire donne (−1−1). Dénoncer est encore meilleur.
 
               </li>
              
@@ -94,7 +90,7 @@
        <p id="cas4">Vous vous êtes protégés mutuellement et avez exercé votre droit au silence.
         Vous ne passerez chacun qu'une année en prison avant d'être libérés.</p>
        <button id="again">Rejouer</button>
-       <button id="other">Autres jeux</button>
+       <button id="other">↩ théories des jeux</button>
     </div>
       </section>
     </main>

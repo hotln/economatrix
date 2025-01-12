@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/TheorieDesJeux/stackelberg.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <script src="javascript/stackelberg.js" defer></script>
     
     <title>Duopole de Stackelberg</title>
@@ -12,26 +16,20 @@
     <div id="backdrop"></div>
     <header>
       <a href="index.html">EconoMatrix</a>
+      <h1>Bataille des chocolatiers</h1>
+
     </header>
     <main>
-        <section id="hero">
-            
-            <h1>Bataille des chocolatiers - Duopole de Stackelberg</h1>
-            
-            
-            
                <div id="scenario-overlay"> 
                 <img src="images/choco.png">
                  <p>Deux entreprises de chocolat, ChocoLeader (le leader) et ChocoFollower (le follower), rivalisent pour maximiser leurs profits sur le marché des tablettes de chocolat. ChocoLeader prend sa décision en premier, tandis que ChocoFollower réagit en fonction de cette décision pour maximiser ses propres profits.
-                    L’objectif est de simuler un équilibre de Stackelberg, où le leader anticipe correctement la réaction optimale du follower.
+                    L’objectif est de simuler un équilibre de Stackelberg, où le leader anticipe correctement la réaction optimale du follower.Quelle entreprise aimeriez-vous être ?
                     
-                    <p id="question">Quelle entreprise aimeriez-vous être ?</p>
                     <div id="questionbtns">
                     <button id="leader">ChocoLeader</button>
                     <button id="follower">ChocoFollower</button></div>
                </div>
-            
-           </section>
+               <a href="TheoriesDeJeux.html"><button class="btn" id="retour">↩ théories des jeux</button></a>
            <div class="tree">
             <!-- Root Node -->
             <div class="node root"> ChocoLeader</div>
@@ -270,15 +268,15 @@
                     le max, ChocoFollower a produit 180 chocolats. Vous avez le plus grand profit possible.
                     
                 </p>
-                <button id="againplay">jouez encore</button>
-                    <button id="other">Aller à d'autres théories</button>
+                <button id="againplay">Rejouer</button>
+                    <button id="other">↩ théories des jeux</button>
             </div>
             <div id="lose-overlay" class="overlay">
             <p>
-                Soit ce n’est pas un équilibre optimal soit les profits possibles ne sont pas correctement replacés. Réessayez pour maximiser vos profits !
+                Soit ce n’est pas un équilibre optimal soit les profits possibles ne sont pas correctement replacés.
                 
             </p>
-            <button id="againtry">réessayez</button>
+            <button id="againtry">Réessayez</button>
         </div>
           
     </main>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/TheorieDesJeux/bertrand.css" rel="stylesheet">
+    <link href="styles/general.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="javascript/theorieDesJeux/bertrand.js" defer></script>
     <title>Duopole de Bertrand</title>
 </head>
@@ -11,16 +13,11 @@
     <div id="backdrop"></div>
     <header>
         <a href="index.html">EconoMatrix</a>
+        <h1>Guerre des pizzas</h1>
         
     </header>
     <main>
-        <section id="hero">
         
-          <h1>Le Duopole de Bertrand</h1>
-        
-         
-
-        </section>
         <div id="overlay-begin" >
             <img src="images/pepperoni.png" alt="pizza Image">
             <p>
@@ -29,7 +26,10 @@
             </p>
             <button id="close-overlay">Suivant</button>
         </div>
+
         <section id="jeux">
+            <a href="TheoriesDeJeux.html"><button class="btn" id="retour">↩ théories des jeux</button></a>
+
           <p>Demande totale = 100 - 5 x prix</p>
           <p>Coût marginal = 5 euros</p>
           
@@ -90,9 +90,9 @@
                 
             </form>
             <p id="egalite-feedback"></p>
-            <div id="buttons4">
+            <div id="buttons4" class="button-container">
                 <button id="tryagain4-btn">rejouer</button>
-                <button id="othertheories4-btn">aller aux autres theories</button></div>
+                <button id="othertheories4-btn">↩ théories de jeux</button></div>
         </div>
         <div id="win-overlay" class="overlay">
             <p>Vous étiez plus compétitif que votre concurrent et avez gagné tous les clients. 
@@ -104,22 +104,22 @@
                 
             </form>
             <p id="win-feedback"></p>
-            <div id="buttons3">
+            <div id="buttons3" class="button-container">
                 <button id="tryagain3-btn">rejouer</button>
-                <button id="othertheories3-btn">aller aux autres theories</button></div>
+                <button id="othertheories3-btn">↩ théories de jeux</button></div>
         </div>
         
         <div id="lose-overlay" class="overlay">
             <p>Malheureusement, vous avez perdu la concurrence sur les prix. 
                 Tous les clients sont partis chez Cheesy Palace. Vous avez subi une perte.</p>
                 <button id="tryagain-btn">rejouer</button>
-                <button id="othertheories-btn">aller aux autres theories</button>
+                <button id="othertheories-btn">↩ théories de jeux</button>
         </div>
         <div id="cout-overlay" class="overlay">
             <p>Tous les clients sont venus à vous, mais comme vous avez vendu au prix coûtant, vous n'avez réalisé aucun profit. 
                 Vous n'avez pas fait faillite, mais vous n'avez pas non plus eu de bénéfices.</p>
                 <button id="tryagain2-btn">rejouer</button>
-                <button id="othertheories2-btn">aller aux autres theories</button>
+                <button id="othertheories2-btn">↩ théories de jeux</button>
         </div>
 
         

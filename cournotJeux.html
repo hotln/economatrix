@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="styles/TheorieDesJeux/overlaysTheorie.css">
     <link rel="stylesheet" href="styles/TheorieDesJeux/configurationTheorie.css">
     <link rel="stylesheet" href="styles/TheorieDesJeux/gameTheorie.css">
-   
+    <link rel="stylesheet" href="styles/general.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <script src="javascript/theorieDesJeux/appTheorie.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
     <header>
-        <a href="index.html"><h2>EconoMatrix</h2></a>
+        <a href="index.html">EconoMatrix</a>
         
       <h1>Duopole de Cournot</h1>
-      <button class="btn btn-alt">scenario</button>
-      <aside class="modal" id="paragraph-overlay">
-        <p class=overlay-paragraph>Deux entreprises, Entreprise A et Entreprise B, produisent un bien homogène et se font concurrence sur le marché en fixant leurs quantités de production simultanément. Le prix du bien sur le marché est déterminé par la demande agrégée en fonction de la quantité totale produite par les deux entreprises.
-          Chaque entreprise doit décider de la quantité à produire pour maximiser son profit, en anticipant la quantité que l'autre entreprise va produire. Il s'agit d'un jeu non coopératif simultané parce que les entreprises prennent leurs décisions sans connaître le choix de l'autre.
-          </p>
-      </aside>
+      
       
     </header>
     <main>
+      <a href="TheoriesDeJeux.html"><button class="btn" id="retour">↩ théories des jeux</button></a>
+
       <div id="info-question">
+
       <p>prix=2-0.002 x Quantité totale</p>
       <p>Cout = 0.3 x quantité</p></div>
         <section id="active-game">
@@ -91,7 +92,7 @@
               <button class="btn" id="cheat-btn">duopole</button>
               <div id="win-overlay" class="overlay" style="display:none;">
                 <p>Selon l'équilibre de Nash, vous avez fait le bon choix, félicitations !!</p>
-                <a href="TheoriesDeJeux.html" id="allez">allez aux autres jeux</a>
+                <a href="TheoriesDeJeux.html" id="allez">↩ théories des jeux</a>
               </div>
               <div id="lose-overlay" class="overlay" style="display:none;">
                 <p>Malheuresemnt ce n'est pas la bonne choix</p>
@@ -105,11 +106,6 @@
                <a href="cournotInfo.html">pour plus d’informations</a>
             </div>
           </div>
-      
-
-          
-          
-
         </div>
 
           </div>

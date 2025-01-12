@@ -1,35 +1,9 @@
-a{
-    text-decoration: none;
+#backdrop {
+    display: none;
 }
-li{
-    list-style: none;
-}
-header {
-    background-color:  #06808be6 ;
-    color: white;
-    padding: 1rem 4%;
-    text-align: center;
-    font-size: 2rem;
-}
-header a{
-    font-size: 2rem;
-    color: white;
-    margin-right: 85rem;
-    text-decoration: none;
-}
-
-header a:hover{
-    background-color: #06808be6 ;
-    border-radius: 1rem;
-    
-}
-body{
-    margin:0;
-    padding:0;
-}
-#hero{
-    font-size:large;
-    text-align: center;
+header button{
+    margin-left:45%;
+    margin-bottom: 2%;
 }
 .overlay{
     display:none;
@@ -46,16 +20,7 @@ body{
     z-index: 100;
     color: black;
 }
-#backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    z-index: 1;
-  }
+
   #game-board{
     display: grid;
     list-style: none;
@@ -65,6 +30,10 @@ body{
     justify-content:center;
     gap:0.5rem;
     
+}
+#scenario{
+    margin: 2% 15%;
+    font-size: 1.5rem;
 }
  #game-board li{
     background-color: #06808be6 ;
@@ -108,38 +77,12 @@ body{
     font-size: 1.5rem;
     justify-content: center;
 }
-#hero{
-    background-color: #06808be6;
-    padding-bottom:2rem;
-    color: white;
-    margin-top: -2.5rem;
-}
-#hero h1{
-    font-size: 3rem;
-}
 
-
-html, body {
-    overflow-x: hidden;
-}
 #retour{
     margin-right: 70%;
     margin-top: 2%;
 }
-button{
-    background-color: #06808be6;
-    padding-bottom:0.5rem;
-    padding-top:0.5rem;
-    padding-left:1rem;
-    padding-right:1rem;
-    margin-top: -0.5rem;    color: white;   
-    border-radius: 1rem;
-    border-color: white;
-}
-button:hover{
-    background-color: #057079e6;
 
-}
 #cas-overlay p{
     padding-bottom: 5rem;
     font-size: 1.5rem;
