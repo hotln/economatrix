@@ -125,23 +125,28 @@ function handlePlayerChoice(playerChoice) {
       }
  }
 
- function restartGame() {
-    // Mevcut overlay ve mesajları gizle
-    document.getElementById('win-overlay').style.display = 'none';
-    document.getElementById('lose-overlay').style.display = 'none';
-    scenarioOverlay.style.display = 'block';
-    followSent.style.display = 'none';
-    leaderSent.style.display = 'none';
+ document.addEventListener('DOMContentLoaded', (event) => {
+  function restartGame() {
+      console.log("Reloading the page to restart the game...");
+      location.reload(); // Reload the entire page
+  }
 
-    // Dropdown butonlarını varsayılan hale getir
-    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
-    dropdownButtons.forEach(button => {
-        button.textContent = '(...,...)'; // Varsayılan içerik
-        delete button.dataset.selected;  // Seçim bilgilerini sıfırla
-    });
-}
+  const againTryButton = document.getElementById('againtry');
+  const againPlayButton = document.getElementById('againplay');
 
-againtry.addEventListener('click', restartGame);
-againplay.addEventListener('click', restartGame);
+  if (againTryButton) {
+      againTryButton.addEventListener('click', restartGame);
+      console.log("Attached event listener to againtry button");
+  } else {
+      console.log("againtry button not found");
+  }
+
+  if (againPlayButton) {
+      againPlayButton.addEventListener('click', restartGame);
+      console.log("Attached event listener to againplay button");
+  } else {
+      console.log("againplay button not found");
+  }
+});
 
  
